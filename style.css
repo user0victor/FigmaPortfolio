@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    background-color: #161616;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 64px;
+
+}
+.menu-logo{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B1B1B;
+    border: #262626 2px solid;
+    border-radius: 100%;
+}
+.menu-logo img{
+    width: 40px;
+    height: 40px;
+}
+.menu-nav{
+    background-color: #1B1B1B;
+    width: 100%;
+    border: #262626 2px solid;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-nav ul{
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+}
+.menu-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.menu-nav ul li a:hover{
+    color: #F35034;
+    font-weight: 600;
+}
+#active {
+    color: #F35034;
+    font-weight: 600;
+}
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #1B1B1B;
+    border: #262626 2px solid;
+    border-radius: 20px;
+}
+.main-banner{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main-banner-text{
+    width: 100%;
+    margin: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.main-banner-tittle{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.red-dot{
+    background-color: #E63E21;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+}
+.available-button{
+    display: flex;
+    gap: 1em;
+    background-color: #161616;
+    border: #262626 2px solid;
+    border-radius: 20px;
+    align-items: center;
+    padding: 0 1B0px;
+    font-size: 13px;
+}
+.main-banner-presentation {
+    display: flex;
+    flex-direction: column;
+}
+.main-banner-button{
+    width: 265px;
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}
+#a1{
+    width: 100px;
+    height: 42px;
+    color: white;
+    background-color: #E63E21;
+    border: black 2px solid;
+    box-shadow: #ff401e 0px 0px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#a2{
+    width: 100px;
+    height: 42px;
+    color: white;
+    background-color: #161616;
+    border: #262626 2px solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.banner-flex-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-banner-image{
+}
+.main-banner-image img{
+    width: 178px;
+}
