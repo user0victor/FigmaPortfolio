@@ -7,8 +7,7 @@ html{
     background-color: #161616;
 }
 body{
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
 }
 header{
     width: 80%;
@@ -19,14 +18,15 @@ header{
 
 }
 .menu-logo{
-    width: 64px;
-    height: 64px;
+    min-width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1B1B1B;
     border: #262626 2px solid;
-    border-radius: 100%;
+    border-radius: 50%;
+    padding: 12px;
 }
 .menu-logo img{
     width: 40px;
@@ -44,11 +44,12 @@ header{
 .menu-nav ul{
     width: 80%;
     justify-content: space-between;
-    margin: 0 auto;
+    border-radius: 50px;;
     display: flex;
     list-style: none;
 }
 .menu-nav ul li a{
+    width: fit-content;
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -77,6 +78,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .main-banner-text{
     width: 100%;
@@ -88,6 +90,7 @@ main{
     width: 100%;
     justify-content: space-between;
     display: flex;
+    font-weight: 300;
 }
 .red-dot{
     background-color: #E63E21;
@@ -103,12 +106,12 @@ main{
     border-radius: 20px;
     align-items: center;
     padding: 0 10px;
-    font-size: 13px;
 }
 .main-banner-presentation {
     display: flex;
     flex-direction: column;
 }
+
 .main-banner-button{
     width: 265px;
     display: flex;
@@ -153,3 +156,82 @@ main{
 .main-banner-image img{
     width: 178px;
 }
+/*TAMNHO DAS FONTES*/
+.main-banner-tittle h1{
+    font-weight: 550;
+    font-size: 2em;
+}
+.main-banner-description h1{
+    font-weight: 550;
+    font-size: 2em;
+}
+.main-banner-description p{
+    max-width: 300px;
+    margin-top: 15px;
+    font-size: 1.25em;
+}
+.main-banner-button a{
+    font-size: 1.0em;
+}
+@media only screen and (max-width: 768px) {
+    /*For mobile phones:*/
+   .banner-flex-container{
+    display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: center;
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+   }
+   .main-banner-image{
+       margin-top: 20px;
+   }
+   .main-banner-tittle{
+       flex-wrap: wrap;
+       gap: 10px;
+   }
+   .main-banner-button{
+    width: 100%;
+   }
+   a{
+       font-size: 0.7em !important;
+   }
+   h1{
+       font-size: 1.65em !important;
+   }
+   p{
+       font-size: 0.7em !important;
+   }
+ }
+ @media only screen and (max-width: 320px) {
+    /*For mobile phones:*/
+   .banner-flex-container{
+    display: flex;
+    width: 100%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+   }
+   .main-banner-image{
+       margin-top: 20px;
+       width:100%;
+   }
+   .main-banner-tittle{
+       flex-wrap: wrap;
+       gap: 10px;
+   }
+   .main-banner-button{
+    width:70%;
+   }
+   a{
+       font-size: 0.5em !important;
+   }
+   h1{
+       font-size: 1.2em !important;
+   }
+   p{
+       font-size: 0.5em !important;
+   }
+ }
